@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Firebase Web Basics</title>
+  <!-- Font Family - Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="mainDiv" align="right">
+    <h1 id="fireHeading" align="left">Firebase Web App</h1>
+    <textarea id="mainText" placeholder="Enter text here ..."></textarea>
+    <button id="submitBtn" onclick="submitClick()"></button>
+  </div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZpIT0Hs5uWR_PJNdTBPxetGXerLVazK4",
+    authDomain: "myproject-969f8.firebaseapp.com",
+    databaseURL: "https://myproject-969f8.firebaseio.com",
+    storageBucket: "myproject-969f8.appspot.com",
+    messagingSenderId: "419614445442"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
